@@ -1,7 +1,8 @@
-type Vendor @model @auth(rules: [{allow: public}]) {
+type Vendor @model @auth(rules: [{allow: public, operations: [read]}]) {
   id: ID!
   name: String
   url: AWSURL
   phone: AWSPhone
   description: String
 }
+ 

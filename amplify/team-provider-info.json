@@ -10,6 +10,11 @@
       "StackName": "amplify-supportlocal-staging-75355",
       "StackId": "arn:aws:cloudformation:us-west-2:042626818835:stack/amplify-supportlocal-staging-75355/06972130-36cf-11eb-81a8-0237511e9afd",
       "AmplifyAppId": "d2v72wt97dr2al"
+    },
+    "categories": {
+      "auth": {
+        "supportlocal": {}
+      }
     }
   }
 }
