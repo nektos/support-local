@@ -41,11 +41,50 @@ const _VENDORS = [
     logoUrl: "http://hisuisushi.com/wp-content/uploads/2015/10/Hisui-Sushi.png",
     address: "25004 Blue Ravine Rd #107",
     details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  }
+  },
+  {
+    id: "4",
+    name: "Reset Folsom",
+    summary: "Historic Folsom’s Premier Third Wave Coffee House and Wine & Beer Bar",
+    phone: "916-555-9000",
+    url: "https://resetfolsom.com/",
+    logoUrl: "https://chambermaster.blob.core.windows.net/images/customers/486/members/7863/logos/MEMBER_PAGE_HEADER/reset.logo.transparent.png",
+    address: "727 Sutter Street, Ste. B",
+    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    id: "5",
+    name: "Back Bistro",
+    summary: "Folsom's premier local bistro!",
+    phone: "916-555-9000",
+    url: "https://backbistro.com/",
+    logoUrl: "https://secureservercdn.net/198.71.233.65/bxi.51e.myftpupload.com/wp-content/uploads/2019/01/BackBistro_logo-300.jpg",
+    address: "230 Palladio Pkw Ste 1201",
+    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
 ];
 
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
 export default function VendorList() {
-  const [vendors, setVendors] = useState(_VENDORS);
+  const [vendors, setVendors] = useState(shuffle(_VENDORS));
   const classes = useStyles();
   return (
     <Grid container className={classes.root} spacing={2} justify="center">
