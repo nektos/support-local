@@ -20,7 +20,7 @@ const _VENDORS = [
     url: "https://folsomtaphouse.com",
     logoUrl: "https://assets.locable.com/r/logo_jumbo/images/1446/attachments-original-1445031473-Folsom_Tap_House_Logo.png",
     address: "25005 Blue Ravine Rd. #140",
-    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
   },
   {
     id: "2",
@@ -30,7 +30,7 @@ const _VENDORS = [
     url: "https://mexquite.com",
     logoUrl: "https://mexquite.com/wp-content/uploads/2017/04/logo.png",
     address: "25095 Blue Ravine Rd.",
-    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
   },
   {
     id: "3",
@@ -38,9 +38,9 @@ const _VENDORS = [
     summary: "Combining traditional cuisine with a creative & contemporary flair, we focus on serving our foods in a health conscious manner.",
     phone: "916-555-9000",
     url: "http://hisuisushi.com",
-    logoUrl: "http://hisuisushi.com/wp-content/uploads/2015/10/Hisui-Sushi.png",
+    logoUrl: "https://s3-media0.fl.yelpcdn.com/bphoto/ntsNomnlxNUwLXV0-HkErw/o.jpg",
     address: "25004 Blue Ravine Rd #107",
-    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
     id: "4",
@@ -50,7 +50,7 @@ const _VENDORS = [
     url: "https://resetfolsom.com/",
     logoUrl: "https://chambermaster.blob.core.windows.net/images/customers/486/members/7863/logos/MEMBER_PAGE_HEADER/reset.logo.transparent.png",
     address: "727 Sutter Street, Ste. B",
-    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
   },
   {
     id: "5",
@@ -60,7 +60,7 @@ const _VENDORS = [
     url: "https://backbistro.com/",
     logoUrl: "https://secureservercdn.net/198.71.233.65/bxi.51e.myftpupload.com/wp-content/uploads/2019/01/BackBistro_logo-300.jpg",
     address: "230 Palladio Pkw Ste 1201",
-    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
   },
 ];
 

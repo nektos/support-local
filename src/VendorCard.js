@@ -12,7 +12,9 @@ import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import PhoneIcon from '@material-ui/icons/Phone';
 import RoomIcon from '@material-ui/icons/Room';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 
+const rotation = "rotateX(5deg) rotateY(5deg)";
 const useStyles = makeStyles((theme) => ({
   root: {
     margin: 10,
@@ -27,6 +29,13 @@ const useStyles = makeStyles((theme) => ({
       height: 315,
       width: 500,
     }
+  },
+  hovered: {
+    transform: rotation,
+    webkitTransform: rotation,
+    mozTransform: rotation,
+    msTransform: rotation,
+    oTransform: rotation,
   },
   media: {
     width: 'auto',
@@ -48,10 +57,24 @@ const useStyles = makeStyles((theme) => ({
 export default function VendorCard({vendor}) {
   const classes = useStyles();
   const [flipped, setFlipped] = useState(false);
-  const toggleFlip = () => setFlipped(!flipped);
+  const [hovered, setHovered] = useState(false);
+  const toggleFlip = () => {
+    setHovered(false);
+    setFlipped(!flipped);
+  }
+  const toggleHover = () => {
+    if(!flipped) {
+      setHovered(!hovered);
+    }
+  }
   return (
     <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
-      <Card className={classes.root} onClick={toggleFlip}>
+      <Card 
+        className={hovered?`${classes.root} ${classes.hovered}`:classes.root} 
+        onMouseEnter={toggleHover} onMouseLeave={toggleHover}
+        onTouchStart={toggleHover} onTouchEnd={toggleHover}
+        onClick={toggleFlip}  
+        >
         <CardActionArea>
           <CardMedia
             className={classes.media}
@@ -83,12 +106,18 @@ export default function VendorCard({vendor}) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-            <Link href={"tel:"+vendor.phone} target="_blank" className={classes.link}>
-              <PhoneIcon/> {vendor.phone}
-            </Link>
-            <Link href={"https://www.google.com/maps/search/?api=1&query="+vendor.address} target="_blank" className={classes.link}>
-              <RoomIcon/> {vendor.address}
-            </Link>
+            <Grid container>
+              <Grid item sm={12} md={6}>
+                <Link href={"tel:"+vendor.phone} target="_blank" className={classes.link}>
+                  <PhoneIcon/> {vendor.phone}
+                </Link>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Link href={"https://www.google.com/maps/search/?api=1&query="+vendor.address} target="_blank" className={classes.link}>
+                  <RoomIcon/> {vendor.address}
+                </Link>
+              </Grid>
+            </Grid>
         </CardActions>
       </Card>
     </ReactCardFlip>

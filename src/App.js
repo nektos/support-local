@@ -13,8 +13,20 @@ import {
 const theme = createMuiTheme({
   palette: {
     type: "dark"
-  }
+  },
 });
+theme.typography.body2 = {
+  fontSize: '12pt',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '11pt',
+  },
+}
+theme.link = {
+  fontSize: '12pt',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '9pt',
+  },
+}
 
 function App() {
   return (
